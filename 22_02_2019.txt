@@ -1,0 +1,36 @@
+Software Construction 22.02.2019
+Debuggen und Testen: Unterschied --> es gibt ein Fehler, dann debuggen, um Fehler zu finden, hinterlässt aber keinen Spur. Beim Testen ist es besser,
+da man dann auch in einem Monta den Test durchführen kann.
+Construction --> sehr wichtig, da es auch Design und Struktur betrifft, was ganz am Anfang entschieden werden soll.
+Testen --> Qualität, Kriterien auf Slide 9
+Ein Produkt erstellt, das tut was der Kunde will und dass es mit verfügten Ressourcen machbar ist. (Software Contstruction)
+Bei kleinem Schritt wieder ausführen, immer nach kleinen Schritten. Applikation ausführen ohne Umgebung starten (Console) oder automatisieren
+Wiederverwenderbärkeit sehr wichtig!
+
+Artefakte für die Versionskontrolle: --> manuell erstellte Dateien
+- Source code (prod und test)
+- Konfiguration von Tools
+- Build script
+- Doku (Readme oder Word files)
+- Bilder, Videos, Icons
+- Testdaten
+
+Artefakte ohne Versionskontrolle: --> generierte Dateien --> .gitignore
+- Passwörter, Lizenzen (Zertifikate)
+- Logdateien
+- persönliche Dateien (vor allem Configs)
+- temporäre Dateien, Caches
+- .class Dateien (macht ein Compiler beim Übersetzen der Sprache), Packages (.jar, .war, .dll...), Binäre Dateien
+
+Wie sollen Entwicklerwerkzeuge in Repo gespecihert? (Grenzfälle)
+- Libraries --> eigene Repo von Maven (nicht von mir)
+- IDE (Tools auch) --> nicht ins REpo, aber VM Image erstellen und archivieren
+
+Git:
+Commit: Öfters sollte ma es machen, just working copy
+Update: Immer bevor commit
+Versioniserung: Jede Version zeigt auf die ältere, wovon es produziert wurde.
+master: Das hauptkollonne
+Branches: lokal, für sich zu arbeiten
+Merge: 
+.git folder nicht anfassen
